@@ -5,10 +5,11 @@
   </nav>
   <router-view/> -->
   <div>
-    <h1>My App</h1>
+    <h1 class="text-center m-4">My App</h1>
+    <router-view></router-view>
   </div>
 </template>
 
-<style>
+<style scoped>
 @import 'style.css';
 </style>
