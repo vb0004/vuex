@@ -97,5 +97,5 @@ export default {
 };
 </script>
 <style scoped>
-/* @import 'style.css'; */
+@import 'style.css';
 </style>

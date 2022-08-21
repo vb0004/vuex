@@ -142,11 +142,25 @@
 <script>
 export default {
   name: 'HomeView',
+  data() {
+    return {
+      isAuthenticated: true,
+    };
+  },
   components: {},
+  computed: {
+    username() {
+      return this.$route.params.username;
+    },
+  },
   mounted() {},
   methods: {
-    tes() {
-      alert();
+    goToDashboard() {
+      if (this.isAuthenticated) {
+        this.$router.push('/dashboard');
+      } else {
+        this.$router.push('/login');
+      }
     },
   },
 };

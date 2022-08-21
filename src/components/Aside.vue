@@ -338,9 +338,12 @@
       <div class="collapse navbar-collapse" id="navbar-menu">
         <ul class="navbar-nav pt-lg-3">
           <li class="nav-item">
-            <a class="nav-link" href="./index.html">
-              <span class="nav-link-icon d-md-none d-lg-inline-block"
-                ><!-- Download SVG icon from http://tabler-icons.io/i/home -->
+            <router-link
+              class="nav-link router-link-exact-active router-link-active"
+              to="/"
+              active-link="active"
+            >
+              <span class="nav-link-icon d-md-none d-lg-inline-block">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="icon"
@@ -360,7 +363,7 @@
                 </svg>
               </span>
               <span class="nav-link-title"> Home </span>
-            </a>
+            </router-link>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -400,7 +403,13 @@
             <div class="dropdown-menu">
               <div class="dropdown-menu-columns">
                 <div class="dropdown-menu-column">
-                  <a class="dropdown-item" href="./empty.html"> Empty page </a>
+                  <router-link
+                    class="dropdown-item router-link-exact-active router-link-active"
+                    to="counter"
+                    active-link="active"
+                  >
+                    Counter
+                  </router-link>
                   <a class="dropdown-item" href="./accordion.html">
                     Accordion
                   </a>
@@ -694,7 +703,7 @@
               </div>
             </div>
           </li>
-          <li class="nav-item active dropdown">
+          <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="#navbar-layout"
@@ -726,7 +735,7 @@
               </span>
               <span class="nav-link-title"> Layout </span>
             </a>
-            <div class="dropdown-menu show">
+            <div class="dropdown-menu">
               <div class="dropdown-menu-columns">
                 <div class="dropdown-menu-column">
                   <a class="dropdown-item" href="./layout-horizontal.html">
@@ -773,10 +782,7 @@
                   <a class="dropdown-item" href="./layout-fluid.html">
                     Fluid
                   </a>
-                  <a
-                    class="dropdown-item active"
-                    href="./layout-fluid-vertical.html"
-                  >
+                  <a class="dropdown-item" href="./layout-fluid-vertical.html">
                     Fluid vertical
                   </a>
                 </div>

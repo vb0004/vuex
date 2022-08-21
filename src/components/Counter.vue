@@ -2,8 +2,8 @@
   <div>
     <h1>Counter</h1>
     <p>{{ count }}</p>
-    <button @click="increment">Increment</button>
-    <button @click="decrement">Decrement</button>
+    <button class="btn btn-success m-1" @click="increment">Increment</button>
+    <button class="btn btn-danger m-1" @click="decrement">Decrement</button>
   </div>
 </template>
 
